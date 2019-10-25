@@ -140,6 +140,43 @@ header {
 #movies .col-lg-3:last-child img {
     border-right: none;
 }
+/***fine ribbon***/
+/***tre_colonne***/
+#perche_non_potrai {
+    height: 500px;
+    background-color: #022b42;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+}
+.row {
+    width: 992px;
+    margin: 0 auto;
+}
+#perche_non_potrai .col-lg-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#perche_non_potrai h2 {
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+#perche_non_potrai h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#perche_non_potrai p {
+    line-height: 25px;
+    font-weight: 500;
+}
+#perche_non_potrai img {
+    width: 90px;
+    height: 90px;
+}
 
 @media screen and (max-width: 1440px) {
     #jumbo {
@@ -158,6 +195,16 @@ header {
 }
 
 @media screen and (max-width: 1200px) {
+    #perche_non_potrai h2 {
+        font-size: 26px;
+    }
+    #perche_non_potrai h3 {
+        font-size: 20px;
+    }
+    #perche_non_potrai p {
+        line-height: 25px;
+        font-size: 14px;
+    }
     #jumbo {
         height: 920px;
         padding-right: 0;
@@ -177,10 +224,14 @@ header {
         width: 50%;
         transform: translateX(-50%);
     }
+
 }
 
 @media screen and (max-width: 1023px) {
-
+    .row {
+        width: 730px;
+        margin:0 auto;
+    }
     #accedi {
         background: transparent;
         margin-right: 0;
@@ -206,9 +257,40 @@ header {
         top: 390px;
     }
 }
+@media screen and (max-width:992px) {
+    #immagine_tre, #immagine_quattro {
+        display: none;
+    }
+    .row {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 767px) {
 
+    #perche_non_potrai  {
+        height: auto;
+    }
+    #perche_non_potrai h2 {
+        font-size: 20px;
+    }
+    #perche_non_potrai h3 {
+        font-size: 18px;
+    }
+    #perche_non_potrai p {
+        margin-bottom: 20px;
+    }
+    #perche_non_potrai img {
+        height: 70px;
+        width: 70px;
+    }
+
+    #immagine_uno img {
+        width: 100%;
+    }
+    #immagine_due {
+        display:none;
+    }
     header {
         height: 50px;
     }
@@ -248,4 +330,5 @@ header {
     #ribbon .button {
         margin-left: 0;
     }
+
 }

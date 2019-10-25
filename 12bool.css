@@ -14,6 +14,11 @@
     display: table;
     content: '';
 }
+.clearfix::after {
+    clear: both;
+    display: table;
+    content: '';
+}
 
 [class*="col-"] {
     float: left;
@@ -221,7 +226,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .container {
         width: 100%;
