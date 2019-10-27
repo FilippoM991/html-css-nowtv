@@ -197,7 +197,7 @@ header {
     background-color: #003366;
     text-align: center;
     color: white;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 #vuoi_guardare_nowtv h1 {
     font-size: 32px;
@@ -218,10 +218,34 @@ header {
         font-weight: 500;
 }
 footer {
-    background-color: black;
+    background-color: #1C1C21;
     height: 300px;
-    padding: 35px 15px
+    padding: 35px 15px;
     color:white;
+}
+footer ul {
+    list-style-type: none;
+}
+footer ul li {
+    padding-bottom: 18px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+#social a {
+    color: white;
+    font-size: 25px;
+    margin-left: 15px;
+}
+#small {
+    margin-top: 25px;
+    font-size: 16px;
+}
+#small strong {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1440px) {
@@ -274,6 +298,12 @@ footer {
 }
 
 @media screen and (max-width: 1023px) {
+    footer {
+        height: auto;
+    }
+    #small {
+        padding: 0 40px;
+    }
     .row {
         width: 730px;
         margin:0 auto;
@@ -312,6 +342,7 @@ footer {
     }
 }
 @media screen and (max-width:992px) {
+
     #immagine_tre, #immagine_quattro {
         display: none;
     }
@@ -329,10 +360,39 @@ footer {
     #vuoi_guardare_nowtv p {
         margin-bottom: 50px;
     }
+    footer {
+        padding-left: 100px;
+        padding-right: 100px;
+        height: 520px;
+    }
+    footer .col-md-12 {
+        margin-bottom: 30px;
+    }
+    .col-md-12, .col-md-6 {
+        text-align: center;
+        padding: 0 30px;
+    }
+    footer ul li {
+        border-top: 1px solid rgba(255,255,255,0.25);
+        padding: 18px 0;
+    }
+    footer ul li:last-child {
+        border-bottom: 1px solid rgba(255,255,255,0.25);
+        margin-bottom: 20px;
+    }
 
 }
 
 @media screen and (max-width: 767px) {
+
+    footer {
+        height: auto;
+        padding:20px;
+    }
+    #secondo_ul {
+        position: relative;
+        bottom:20px;
+    }
 
 
     #vuoi_guardare_nowtv img {
